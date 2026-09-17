@@ -1,10 +1,12 @@
 import SwiftUI
 
 struct ContentView: View {
-    @State var tasks =  ["Do the dishes", "Mow the lawn", "Feed the dawg"]
+    @State var tasks: [Task] =  []
     var body: some View {
+        HeaderView()
         List(tasks, id: \.self) { task in
-            Text(task)
+          
+            
         }
             
         
