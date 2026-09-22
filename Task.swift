@@ -10,7 +10,7 @@ import SwiftUI
 struct Task: Identifiable, Hashable {
     var id = UUID()
     var name: String
-    var completed: Bool
+    var completed = false
     struct TaskView: View {
         @State var nameOfTask: String = ""
         var body: some View {
