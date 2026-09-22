@@ -7,8 +7,7 @@
 
 import SwiftUI
 
-struct Task: Identifiable, Hashable {
-    var id = UUID()
+struct Task: Hashable {
     var name: String
     struct TaskView: View {
         @State var nameOfTask: String = ""
