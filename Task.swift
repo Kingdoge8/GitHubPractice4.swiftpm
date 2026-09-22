@@ -9,6 +9,7 @@ import SwiftUI
 
 struct Task: Hashable {
     var name: String
+    var completed = false
     struct TaskView: View {
         @State var nameOfTask: String = ""
         var body: some View {
